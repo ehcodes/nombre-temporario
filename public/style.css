@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  background: white;
+  font-family: 'Rubik', sans-serif;
+  color: #000;
+}
+
+h1 {
+  color: #379D1D;
+  font-size: 10rem;
+  font-family: 'Rubik', sans-serif;
+}
+h2,h3,h4,h5,h6{
+  color: #000;
+}
+
+html {
+  font-size: 20px;
+}
+
+input {
+  text-align: center;
+}
+
+textarea, button{
+  margin: 2%;
+  resize: none;
+}
+
+form{
+  color: #379D1D;
+}
+
+/*==============================================================================
+===============================CLASSES =========================================
+================================================================================*/
+
+.container {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #379D1D;
+}
+
+.logout {
+  margin: 20px
+}
+
+.entries {
+  display: inline-block;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 150px;
+}
+
+.client-profile,
+.therapist-profile {
+  text-align: center;
+}
+
+.btn{
+  background-color: #86F1C4;
+  color: #4F7F6B;
+  margin: 1%;
+}
+
+.btn:Hover{
+  background-color: #4F7F6B;
+  color: #86F1C4;
+}
+
+.entrySection{
+  width: 80%;
+  margin: auto;
+}
+
+.journalContainer{
+  border: 3.5px double #4F7F6B;
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  overflow: auto;
+}
+
+.journals{
+  border: 1px dashed #86F1C4;
+  width: 95%;
+  height: 300px;
+  margin: 2%;
+  overflow: auto;
+  text-align: left;
+}
