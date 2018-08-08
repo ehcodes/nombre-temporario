@@ -64,11 +64,13 @@ module.exports = function(app, passport, db) {
 
   //post client journal entries ===============================================
   app.post('/journalEntries', (req, res) => {
-      var user = req.user;
+      var user      = req.user;
+      var entryDate = Date.now()
       db.collection('journalEntries').save({
         journal   : req.body.journal,
         firstName : req.user.firstName,
-        lastName  : req.user.lastName
+        lastName  : req.user.lastName,
+        entryDate : entryDate
       },(err, result) => {
         if (err) return console.log(err)
          console.log('saved to database')
