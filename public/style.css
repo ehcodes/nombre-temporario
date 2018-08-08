@@ -11,6 +11,15 @@ body {
   color: #000;
 }
 
+nav {
+	background-color: #00bcd4;
+	padding: 1rem;
+	height: 3rem;
+	border-bottom: 1px solid #008596;
+  position: absolute;
+  width: 100%;
+}
+
 h1 {
   color: #379D1D;
   font-size: 10rem;
@@ -42,8 +51,25 @@ form{
 ================================================================================*/
 
 .container {
-  margin-top: 150px;
   text-align: center;
+}
+
+.menuItem {
+	margin: 1rem;
+	font-family: 'Rubik', sans-serif;
+	color: white;
+	font-size: .7rem;
+	text-decoration: none;
+}
+
+.menuItem:hover {
+	margin-bottom: 17px;
+	border-bottom: 3px solid white;
+	-webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 .dashboard-title {
@@ -99,4 +125,8 @@ form{
   margin: 2%;
   overflow: auto;
   text-align: left;
+}
+
+#container{
+  margin-top: 150px;
 }

@@ -1,48 +1,61 @@
 <!doctype html>
-<html>
-<head>
-  <title>PrivateWE</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <html>
+    <head>
+      <title>PrivateWE</title>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-  <section class="container">
-    <section class="col-sm-6 col-sm-offset-3">
+  <body>
+    <!-- NAV BAR -->
+    <nav>
+      <div class="navigation">
+        <a href="#" class="menuItem">Home</a>
+        <a href="#" class="menuItem">About</a>
+        <a href="#" class="menuItem">Download</a>
+        <a href="#" class="menuItem">Contact</a>
+      </div>
+    </nav>
+    <section class="container">
 
-      <h2>Signup</h2>
+      <section class="col-sm-6 col-sm-offset-3">
+        <h2>Signup</h2>
+        <!-- LOGIN FORM -->
+        <form action="/signup" method="post">
+          <section class="formGroup">
+            <label for="therapist">Therapist</label>
+            <input id="therapist" type="radio" name="role" value="therapist">
+            <label for="client">Client</label>
+            <input id="client" type="radio" name="role" value="client" checked>
+          </section>
+          <!-- <section id="therapistSelector" class="formGroup hidden">
+          <select class="" name="">
+            <% for(let i=0;users.length;i++) %>
+            <%= users[i].____________________________________%>
+            <%}%>
+            <option value=""></option>
+          </select>
+          </section> -->
+          <section class="formGroup">
+            <label>First Name</label>
+            <input type="text" class="form-control" name="firstName">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lastName">
+            <label>Username</label>
+            <input type="text" class="form-control" name="email">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+          </section>
+          <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+        </form>
 
-      <!-- LOGIN FORM -->
-      <form action="/signup" method="post">
-        <section class="formGroup">
-          <label for="therapist">Therapist</label>
-          <input id="therapist" type="radio" name="role" value="therapist">
-          <label for="client">Client</label>
-          <input id="client" type="radio" name="role" value="client" checked>
-        </section>
-        <!-- <section id="" class="formGroup hidden">
+        <p>Already have an account? <a href="/login">Login</a></p>
+        <p>Or go <a href="/">home</a>.</p>
 
-        </section> -->
-        <section class="formGroup">
-          <label>First Name</label>
-          <input type="text" class="form-control" name="firstName">
-          <label>Last Name</label>
-          <input type="text" class="form-control" name="lastName">
-          <label>Username</label>
-          <input type="text" class="form-control" name="email">
-          <label>Password</label>
-          <input type="password" class="form-control" name="password">
-        </section>
-        <button type="submit" class="btn btn-warning btn-lg">Signup</button>
-      </form>
-
-      <p>Already have an account? <a href="/login">Login</a></p>
-      <p>Or go <a href="/">home</a>.</p>
-
+      </section>
     </section>
-  </section>
-</body>
-
+  </body>
 </html>
