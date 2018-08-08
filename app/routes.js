@@ -40,12 +40,12 @@ module.exports = function(app, passport, db) {
     console.log(req.user);
     var user = req.user;
     var role = req.user.role;
-    db.collection('users').find().toArray((err, result) => {
+    db.collection('journalEntries').find().toArray((err, result) => {
       if (err) return console.log(err);
       console.log(result)
       res.render('dashboard.ejs', {
         user: req.user,
-        users: result
+        entries: result
       });
     });
   });
