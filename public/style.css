@@ -12,12 +12,17 @@ body {
 }
 
 nav {
-	background-color: #00bcd4;
+	background-color: #86F1C4;
 	padding: 1rem;
 	height: 3rem;
-	border-bottom: 1px solid #008596;
+	border-bottom: 1px solid #86F1C4;
   position: absolute;
   width: 100%;
+}
+li, ul {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
 }
 
 h1 {
