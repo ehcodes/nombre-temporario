@@ -25,7 +25,7 @@ nav{
 }
 
 section{
-
+  margin-top:1rem;
 }
 
 a{
@@ -73,6 +73,13 @@ form{
   text-align: center;
   margin-top: 3rem;
   margin-left: 5.5rem;
+}
+
+.page-title{
+  margin: 1rem;
+  font-family: 'Rubik', sans-serif;
+  color: #4F7F6B!important;
+  font-size: .8rem;
 }
 
 .navItem {
