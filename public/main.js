@@ -1,3 +1,0 @@
-document.getElementById('').addEventListener(#)
-
-// ADD CONDITIONAL LOGIC FOR SELECTION OF THERAPIST/CLIENT AND DROPDOWN

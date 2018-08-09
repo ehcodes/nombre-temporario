@@ -14,7 +14,7 @@
     <!-- Client View -->
     <% if (user.role === "client") { %>
       <section class="client-profile" >
-        <h2 class="dashboard-title">Welcome back, to your dashboard <%= user.firstName %>!</h2>
+        <h2 class="page-title">Welcome back to your dashboard, <%= user.firstName %>!</h2>
 
         <section class="entrySection">
           <form class="clientForm" action="/journalEntries" method="POST">

@@ -12,50 +12,52 @@
   <body>
     <!-- NAV BAR -->
     <header>
-      <nav class="navigation">
+      <span id="page-title">Create your Account</span>
+      <nav>
         <ul>
-          <li  class="menuItem">
-            <a href="/login" title="log in">Login</a>
+          <li>
+            <a class="navItem" href="/login" title="log in">Login</a>
           </li>
-          <li  class="menuItem">
-            <a href="/signup" title="sign up">Sign Up</a>
+          <li>
+            <a class="navItem" href="/signup" title="sign up">Sign Up</a>
           </li>
-          <li  class="menuItem">
-            <a href="/" title="return to landing page">privateWE</a></h3>
+          <li>
+            <a class="navItem" href="/" title="return to landing page">privateWE</a></h3>
           </li>
-          <li  class="menuItem">
-            <a href="/logout" title="log out">Logout</a>
+          <li>
+            <a class="navItem" href="/logout" title="log out">Logout</a>
           </li>
         </ul>
       </nav>
-    </header>
-    <section class="container">
 
+    </header>
+
+    <section class="container">
       <section class="col-sm-6 col-sm-offset-3">
-        <h2>Create your Account</h2>
         <!-- LOGIN FORM -->
         <form action="/signup" method="post">
           <section class="formGroup">
-            <label for="therapist">Therapist</label>
-            <input id="therapist" type="radio" name="role" value="therapist">
-            <label for="client">Client</label>
-            <input id="client" type="radio" name="role" value="client" checked>
+            <label id="form-label">First Name</label>
+            <input type="text" class="form-control" name="firstName">
+            <label id="form-label">Last Name</label>
+            <input type="text" class="form-control" name="lastName">
+            <label id="form-label">Username</label>
+            <input type="text" class="form-control" name="email">
+            <label id="form-label">Password</label>
+            <input type="password" class="form-control" name="password">
           </section>
           <section class="formGroup">
-            <label>First Name</label>
-            <input type="text" class="form-control" name="firstName">
-            <label>Last Name</label>
-            <input type="text" class="form-control" name="lastName">
-            <label>Username</label>
-            <input type="text" class="form-control" name="email">
-            <label>Password</label>
-            <input type="password" class="form-control" name="password">
+            <label id="form-label" for="therapist">Therapist</label>
+            <input id="therapist" type="radio" name="role" value="therapist">
+            <label id="form-label" for="client">Client</label>
+            <input id="client" type="radio" name="role" value="client" checked>
           </section>
           <button type="submit" class="btn btn-warning btn-lg">Signup</button>
         </form>
 
         <p>Already have an account? <a href="/login">Login</a></p>
         <p>Or go <a href="/">home</a>.</p>
+
       </section>
     </section>
   </body>
