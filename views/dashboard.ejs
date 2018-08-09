@@ -11,11 +11,23 @@
   </head>
 
   <body>
+    <!-- NAV BAR -->
+    <header>
+      <span id="page-title">Welcome, <%= user.firstName %>! </span>
+      <nav>
+        <ul>
+          <li>
+            <a class="navItem" href="/" title="return to landing page">privateWE</a></h3>
+          </li>
+          <li>
+            <a class="navItem" href="/logout" title="log out">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- Client View -->
     <% if (user.role === "client") { %>
-      <section class="client-profile" >
-        <h2 class="page-title">Welcome back to your dashboard, <%= user.firstName %>!</h2>
-
+      <section class="client-profile container" >
         <section class="entrySection">
           <form class="clientForm" action="/journalEntries" method="POST">
             <label>Create Journal Entry</label>
@@ -23,28 +35,22 @@
             <button  class="btn btn-default  form-control" type="submit" name="button">Submit Journal Entry</button>
           </form>
         </section>
-        <section class="logout">
-          <a href="/logout" class="btn btn-default">Logout</a>
-        </section>
       </section>
       <% } %>
       <!-- Therapist View -->
       <% if (user.role === "therapist") { %>
-        <section class="therapist-profile">
-          <h2 class="dashboard-title">Welcome back, to your dashboard <%= user.firstName %>!</h2>
-          <!-- placeholder -->
+        <section class="therapist-profile  container">
           <section class="journalContainer">
             <% for(let i= 0; i<entries.length;i++) {%>
+              <section class="journalsHeader">
+                <p id="entry-owner-name"><span class="name"><%= entries[i].firstName %></span>
+                <span class="name"><%= entries[i].lastName %></span></p>
+                <p id="postDate"><span><%= entries[i].entryDate %></span></p>
+              </section>
               <section class="journals">
-                <span class="name"><%= entries[i].firstName %></span>
-                <span class="name"><%= entries[i].lastName %></span>
-                <span id="postDate"><%= entries[i].entryDate %></span>
-                <p><%= entries[i].journal %></p>
+                <p id="entries"><%= entries[i].journal %></p>
               </section>
             <% } %>
-          </section>
-          <section class="logout">
-            <a href="/logout" class="btn btn-default">Logout</a>
           </section>
         </section>
       <% } %>

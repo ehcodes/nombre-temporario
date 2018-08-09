@@ -99,11 +99,6 @@ form{
   margin: 20px
 }
 
-.client-profile,
-.therapist-profile {
-  text-align: center;
-}
-
 .btn{
   background-color: #86F1C4;
   color: #4F7F6B;
@@ -122,8 +117,8 @@ form{
 
 .journalContainer{
   border: 3.5px double #4F7F6B;
-  width: 90%;
-  height: 500px;
+  width: 95%;
+  height: 21rem;
   margin: auto;
   overflow: auto;
 }
@@ -131,10 +126,15 @@ form{
 .journals{
   border: 1px dashed #86F1C4;
   width: 95%;
-  height: 300px;
+  height: 14rem;
   margin: 2%;
   overflow: auto;
   text-align: left;
+}
+
+.journalsHeader{
+  width: 90%;
+  margin-left: 1rem;
 }
 
 #container{
@@ -146,11 +146,17 @@ form{
   font-size: 1rem;
   color: #379D1D;
 }
-
-#postDate{
-  text-align: right;
+#entry-owner-name{
+  float: left;
 }
 
+#postDate{
+  float: right;
+}
+
+#entries{
+  float: left;
+}
 #form-label{
   text-align: left;
   display: inline-block;
