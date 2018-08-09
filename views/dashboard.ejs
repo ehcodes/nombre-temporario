@@ -41,7 +41,7 @@
       <% if (user.role === "therapist") { %>
         <section class="therapist-profile  container">
           <section class="journalContainer">
-            <% for(let i= 0; i<entries.length;i++) {%>
+            <% for(let i= entries.length-1; i>=0;i--) {%>
               <section class="journalsHeader">
                 <p id="entry-owner-name"><span class="name"><%= entries[i].firstName %></span>
                 <span class="name"><%= entries[i].lastName %></span></p>
