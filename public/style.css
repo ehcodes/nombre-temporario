@@ -87,13 +87,6 @@ form{
   margin: 20px
 }
 
-.entries {
-  display: inline-block;
-  margin-bottom: 50px;
-  text-align: center;
-  width: 150px;
-}
-
 .client-profile,
 .therapist-profile {
   text-align: center;
@@ -130,6 +123,10 @@ form{
   margin: 2%;
   overflow: auto;
   text-align: left;
+}
+
+#postDate{
+  text-align: right;
 }
 
 #container{

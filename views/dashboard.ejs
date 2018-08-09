@@ -36,11 +36,9 @@
           <section class="journalContainer">
             <% for(let i= 0; i<entries.length;i++) {%>
               <section class="journals">
-                <p>
-                  <span><%= entries[i].firstName %></span>
-                  <span><%= entries[i].lastName %></span>
-                   posted on <span><%= entries[i].entryDate %></span>
-                </p>
+                <span class="name"><%= entries[i].firstName %></span>
+                <span class="name"><%= entries[i].lastName %></span>
+                <span id="postDate"><%= entries[i].entryDate %></span>
                 <p><%= entries[i].journal %></p>
               </section>
             <% } %>

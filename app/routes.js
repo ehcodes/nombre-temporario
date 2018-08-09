@@ -65,8 +65,9 @@ module.exports = function(app, passport, db) {
   //post client journal entries ===============================================
   app.post('/journalEntries', (req, res) => {
       var user      = req.user;
-      var entryDate = Date.now()
+      var entryDate = new Date()
       db.collection('journalEntries').save({
+        user      : user,
         journal   : req.body.journal,
         firstName : req.user.firstName,
         lastName  : req.user.lastName,
