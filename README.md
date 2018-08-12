@@ -21,4 +21,5 @@ This application's use case is for therapists looking to get more value out of s
 2. Navigate to `localhost:5000`
 
 **Live Version**
+
 http://privatewe.herokuapp.com/
