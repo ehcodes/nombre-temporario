@@ -19,4 +19,6 @@ This application's use case is for therapists looking to get more value out of s
 **Local Version**
 1. run `npm run start`
 2. Navigate to `localhost:5000`
-# privateWE
+
+**Live Version**
+http://privatewe.herokuapp.com/
